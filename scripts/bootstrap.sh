@@ -40,22 +40,35 @@ install_req stage-1
 install_req stage-2
 install_req stage-4
 install_req stage-6
+install_req stage-8
 
 echo
-echo ">> Stage 1 smoke: step01_chat.py (dry import)"
-(cd stage-1 && "$PY" -c "import common, tools; print('stage-1 ok')")
+echo ">> Stage 1 smoke"
+(cd stage-1 && "$PY" step99_smoke.py)
+
+echo
+echo ">> Stage 2 smoke"
+(cd stage-2 && "$PY" step99_smoke.py)
+
+echo
+echo ">> Stage 4 smoke"
+(cd stage-4 && "$PY" step99_smoke.py)
 
 echo
 echo ">> Stage 5 smoke: skill validation"
 (cd stage-5 && "$PY" step04_run_smoke_cases.py)
 
 echo
-echo ">> Stage 7 smoke: eval runner"
-(cd stage-7 && "$PY" scripts/eval_runner.py --tasks evals/tasks.csv --out evals/results.csv)
+echo ">> Stage 6 smoke"
+(cd stage-6 && "$PY" step99_smoke.py)
 
 echo
-echo ">> Stage 7: HTML eval report"
-(cd stage-7 && "$PY" scripts/render_eval_report.py --results evals/results.csv --out evals/report.html)
+echo ">> Stage 7 smoke"
+(cd stage-7 && "$PY" step01_smoke.py)
+
+echo
+echo ">> Stage 8 smoke"
+(cd stage-8 && "$PY" step01_smoke.py)
 
 echo
 echo ">> Progress CLI"
