@@ -1,5 +1,7 @@
 # Agent Learning Hub
 
+[![Smoke](https://github.com/kngwyc3/Agent-Learning-Hub/actions/workflows/smoke.yml/badge.svg)](https://github.com/kngwyc3/Agent-Learning-Hub/actions/workflows/smoke.yml)
+
 A curated AI Agent learning roadmap for people who want to build useful, reliable agents instead of collecting random links.
 
 这个仓库把社区里优秀分享、官方博客、论文、开源项目和真实工程经验，整理成一份可以照着执行的 AI Agent 学习 todo list。
