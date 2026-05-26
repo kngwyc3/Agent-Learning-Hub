@@ -59,6 +59,16 @@
 - 若 Fork <150：知乎/V2EX 长文 + 合规「Fork 打卡」活动（真实参与，不刷量）
 - 每日 `./scripts/milestone_check.sh` 监控增速
 
+### v1.0.0 Release checklist
+
+- [ ] 确认 clone-ready PR 栈已合并到 `main`
+- [ ] `./scripts/bootstrap.sh` 在 fresh clone 下通过
+- [ ] README badge、Quick Start、30 天打卡、good first issues 链接可打开
+- [ ] 更新 [CHANGELOG.md](../../CHANGELOG.md)
+- [ ] 创建 Git tag：`v1.0.0`
+- [ ] GitHub Release 标题：`v1.0.0: Runnable Agent Learning Path`
+- [ ] Release body 复制 `CHANGELOG.md` 中的 v1.0.0 段落，并附 30 天打卡入口
+
 ## Gitee 备选（8 月初未达 80 Fork 时启动）
 
 ```bash
