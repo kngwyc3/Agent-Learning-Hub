@@ -18,7 +18,7 @@ A curated AI Agent learning roadmap for people who want to build useful, reliabl
 ```bash
 git clone https://github.com/kngwyc3/Agent-Learning-Hub.git
 cd Agent-Learning-Hub
-chmod +x scripts/check_github_setup.sh scripts/bootstrap.sh scripts/milestone_check.sh scripts/create_good_first_issues.sh
+./scripts/bootstrap.sh
 ./scripts/check_github_setup.sh
 python3 scripts/hub_progress.py status
 ```
