@@ -21,8 +21,11 @@ STAGES: dict[str, list[str]] = {
     ],
     "stage-2": [
         "step01_memory_layers.py — 记忆分层",
+        "step02_ragflow_ingest.py — 文档入库",
         "step03_ragflow_retrieve.py — RAG 检索",
+        "step04_ragflow_answer.py — 带引用回答",
         "step05_mem0_memory.py — mem0 长期记忆",
+        "step06_letta_compaction.py — Letta 上下文压缩",
         "step07_rag_as_tool.py — RAG 作为工具",
     ],
     "stage-3": [
@@ -49,6 +52,11 @@ STAGES: dict[str, list[str]] = {
         "step01_load_tasks.py — 加载 eval 任务",
         "step02_run_eval.py — 运行 eval",
         "step03_safety_gate.py — 安全门禁",
+    ],
+    "stage-8": [
+        "common.py / tools.py — 配置、trace、成本与工具",
+        "agent.py / cli.py — 可运行 CLI agent",
+        "step01_smoke.py — 离线 smoke test",
     ],
 }
 

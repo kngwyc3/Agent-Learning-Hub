@@ -7,7 +7,7 @@ A curated AI Agent learning roadmap for people who want to build useful, reliabl
 ## 为什么 Fork 这个仓库
 
 1. **可运行代码** — `./scripts/bootstrap.sh` 一键安装依赖并跑通 stage smoke tests
-2. **学习进度 CLI** — `python3 scripts/hub_progress.py status` 本地追踪 stage-1–7 进度
+2. **学习进度 CLI** — `python3 scripts/hub_progress.py status` 本地追踪 stage-1–8 进度
 3. **Cursor Skill 脚手架** — `python3 scripts/scaffold_skill.py --name my-skill --description "..."` 生成可安装 skill
 4. **Eval 基准包** — stage-7 输出 CSV + [HTML 报告](stage-7/evals/report.html)（运行 eval 后生成）
 
